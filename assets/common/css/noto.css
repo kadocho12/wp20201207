@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Noto Sans CJK JP Subset';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans CJK JP'), local('NotoSansCJKjp-Regular'),
+    local('NotoSansJP-Regular'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Regular.woff2') format('woff2'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP Subset';
+  font-style: medium;
+  font-weight: 500;
+  src: local('Noto Sans CJK JP'), local('NotoSansCJKjp-Medium'),
+    local('NotoSansJP-Medium'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Medium.woff2') format('woff2'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Medium.woff') format('woff'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Noto Sans CJK JP Subset';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NotoSansCJKjp-Bold'), local('NotoSansJP-Bold'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Bold.woff2') format('woff2'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Bold.woff') format('woff'),
+    url('/assets/common/font/noto/NotoSansCJKjp-Bold.ttf') format('truetype');
+}
