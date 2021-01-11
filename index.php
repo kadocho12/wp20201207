@@ -56,37 +56,14 @@
                   <article class="p-news__item"><a class="p-news__link" href="<?php the_permalink(); ?>">
                       <div class="p-news__info">
                         <time class="p-news__date" datetime="2020-07-29">2020.07.29</time>
-                        <?php the_category(); ?>
+                        <?php
+                          $cat = get_the_category();
+                          $cat = $cat[0];
+                          echo '<span class="p-news__category '. '-' . $cat->category_nicename .'">' . $cat->cat_name . '</span>';
+                        ?>
                       </div>
                       <p class="p-news__text"><?php the_title(); ?></p></a></article>
-                      <!-- <div class="p-news__info">
-                        <time class="p-news__date" datetime="2020-07-29">2020.07.29</time><span class="p-news__category -news">お知らせ</span>
-                      </div>
-                      <p class="p-news__text">WebメディアのMEDIAMEDIAに掲載されました。</p></a></article> -->
                   <?php endwhile; ?>
-                  <!-- <article class="p-news__item">
-                        <a class="p-news__link" href="/news/detail/">
-                          <div class="p-news__info">
-                            <time class="p-news__date" datetime="2020-03-05">2020.03.05</time><span class="p-news__category -news">お知らせ</span>
-                          </div>
-                          <p class="p-news__text">新型コロナウイルス対策について</p>
-                        </a>
-                      </article>
-                  <article class="p-news__item"><a class="p-news__link" href="/news/detail/">
-                      <div class="p-news__info">
-                        <time class="p-news__date" datetime="2020-02-01">2020.02.01</time><span class="p-news__category -blog">ブログ</span>
-                      </div>
-                      <p class="p-news__text">FLOCSSの考え方</p></a></article>
-                  <article class="p-news__item"><a class="p-news__link" href="/news/detail/">
-                      <div class="p-news__info">
-                        <time class="p-news__date" datetime="2020-01-18">2020.01.18</time><span class="p-news__category -blog">ブログ</span>
-                      </div>
-                      <p class="p-news__text">JavaScriptのES6で書いてみた</p></a></article>
-                  <article class="p-news__item"><a class="p-news__link" href="/news/detail/">
-                      <div class="p-news__info">
-                        <time class="p-news__date" datetime="2019-12-20">2019.12.20</time><span class="p-news__category -news">お知らせ</span>
-                      </div>
-                      <p class="p-news__text">年末年始の営業について</p></a></article> -->
                 <?php else : ?>
                   <p>投稿がありません。</p>
                 <?php endif; ?>
